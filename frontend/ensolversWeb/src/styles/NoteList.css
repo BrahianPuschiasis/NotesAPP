@@ -1,0 +1,121 @@
+/*dark mode notes*/
+.note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  padding-top: 20px;
+  position: relative; 
+}
+  
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  .notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .note {
+    position: relative;
+    border: 2px solid #555;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    width: 200px; 
+    height: 250px;
+    overflow-y: auto;
+  }
+  
+  .delete-button,
+  .archive-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    border: 35px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .archive-button {
+    right: auto;
+    left: -15px;
+    top: -15px;
+  }
+  
+  .star {
+    font-size: 23px;
+  }
+  
+  .expanded-textarea {
+    height: 200px;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #333;
+  }
+  
+
+  .note {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .edit-textarea {
+    width: 100%;
+    height: 100px; 
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+
+.category-buttons button.selected {
+  background-color: #4CAF50; 
+  color: #fff; /
+}
+
+
+.note-content {
+  margin-bottom: auto;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  align-self: flex-end; 
+  position: absolute; 
+  bottom: 0; 
+}
+
+.category-button {
+  margin: 2px;
+  padding: 1px 8px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.category-buttons .category-button:last-child {
+  margin-top: 10px;
+}
